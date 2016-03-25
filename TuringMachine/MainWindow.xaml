@@ -7,20 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="CodeBox" HorizontalAlignment="Center" Height="165" Margin="0,0,0,0" AcceptsReturn="True" TextWrapping="Wrap" Text="Write your code"  VerticalAlignment="Center" Width="238"/>
-        <TextBox x:Name="State" HorizontalAlignment="Left" Height="72" Margin="40,77,0,0" AcceptsReturn="True" TextWrapping="Wrap"  VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="Alphabet" HorizontalAlignment="Left" Height="72" Margin="382,77,0,0" TextWrapping="Wrap" AcceptsReturn="True"  VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="CodeBox" HorizontalAlignment="Center" Height="194" Margin="140,48,139,78" AcceptsReturn="True" TextWrapping="Wrap" Text="Write your code"  VerticalAlignment="Center" Width="238"/>
+        <TextBox x:Name="States" HorizontalAlignment="Left" Height="84" Margin="40,65,0,0" AcceptsReturn="True" TextWrapping="Wrap"  VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="Alphabet" HorizontalAlignment="Left" Height="84" Margin="382,65,0,0" TextWrapping="Wrap" AcceptsReturn="True"  VerticalAlignment="Top" Width="94"/>
         <Button x:Name="AddState" Content="Add" HorizontalAlignment="Left" Margin="40,154,0,0" VerticalAlignment="Top" Width="94"/>
         <Button x:Name="AddAlphabet" Content="Add" HorizontalAlignment="Left" Margin="382,154,0,0" VerticalAlignment="Top" Width="94"/>
         <Button x:Name="RemoveState" Content="Remove" HorizontalAlignment="Left" Margin="40,184,0,0" VerticalAlignment="Top" Width="94"/>
         <Button x:Name="RemoveAddAlphabet" Content="Remove" HorizontalAlignment="Left" Margin="382,184,0,0" VerticalAlignment="Top" Width="94"/>
-        <ComboBox x:Name="State_1" HorizontalAlignment="Left" Margin="140,50,0,0" VerticalAlignment="Top" Width="65" />
-        <ComboBox x:Name="State_2" HorizontalAlignment="Left" Margin="209,50,0,0" VerticalAlignment="Top" Width="98"/>
-        <ComboBox x:Name="State_3" HorizontalAlignment="Left" Margin="312,50,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button x:Name="RunButton" Content="Run" HorizontalAlignment="Left" Margin="140,271,0,0" VerticalAlignment="Top" Width="74"/>
-        <Button x:Name="StepButton" Content="Step" HorizontalAlignment="Left" Margin="302,271,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="CreateButton" Content="Create" HorizontalAlignment="Left" Margin="140,271,0,0" VerticalAlignment="Top" Width="74" Click="RunButton_Click"/>
+        <Button x:Name="StepButton" Content="Step" HorizontalAlignment="Left" Margin="302,271,0,0" VerticalAlignment="Top" Width="76" Click="StepButton_Click"/>
         <ComboBox x:Name="Speed" HorizontalAlignment="Left" Margin="187,244,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="StartTape" HorizontalAlignment="Left" Height="23" Margin="382,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="94"/>
+        <ComboBox x:Name="StartState" HorizontalAlignment="Left" Margin="14,220,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Tape" HorizontalAlignment="Left" Height="23" Margin="174,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="State" HorizontalAlignment="Left" Height="23" Margin="29,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NextCommand" HorizontalAlignment="Left" Height="23" Margin="382,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
